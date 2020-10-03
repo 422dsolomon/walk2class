@@ -17,11 +17,18 @@
       font-weight: 700 !important;
     }
   </style>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <script src="./index.js"></script>
 </head>
 
 <body>
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<div id="map"></div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/7.22.0/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
